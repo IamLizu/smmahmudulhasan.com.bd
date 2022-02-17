@@ -1,0 +1,39 @@
+name: "Deploy to GitHub Pages"
+on:
+  push:
+    branches:
+      - main
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node_version:
+          - 14
+          - 16
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node_version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node_version }}
+      - name: Installing dependencies
+        run: yarn
+      - name: Running tests
+        run: yarn test
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 16
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+      - name: Installing dependencies
+        run: yarn
+      - name: Deploying to GitHub Pages
+        run: |
+          git config --global user.email ${{ secrets.EMAIL }}
+          git config --global user.name ${{ secrets.USERNAME }}
+          yarn run deploy
