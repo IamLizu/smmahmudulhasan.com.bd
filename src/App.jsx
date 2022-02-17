@@ -2,7 +2,7 @@ import lib from "./lib.json";
 
 export default function App() {
   return (
-    <div className="fixed top-0 bottom-0 right-0 left-0 flex justify-center items-center z-10">
+    <div className="fixed top-0 bottom-0 right-0 left-0 flex justify-center items-center z-10 dark:bg-slate-900">
       <div className="lg:flex gap-20 items-center">
         <div className="space-y-5 flex justify-center items-center flex-col lg:block">
           <img
@@ -12,8 +12,12 @@ export default function App() {
           />
           <div className="space-y-4">
             <div className="space-y-1 flex justify-center items-center flex-col lg:block">
-              <h1 className="text-xl md:text-2xl lg:text-4xl">{lib.name}</h1>
-              <p className="text-base lg:text-xl opacity-70">{lib.position}</p>
+              <h1 className="text-xl md:text-2xl lg:text-4xl dark:text-gray-100">
+                {lib.name}
+              </h1>
+              <p className="text-base lg:text-xl opacity-70 dark:text-slate-400">
+                {lib.position}
+              </p>
             </div>
           </div>
         </div>
