@@ -1,4 +1,29 @@
 {
   "name": "S M Mahmudul Hasan",
-  "position": "Software Engineer"
+  "position": "Software Engineer",
+  "image": "https://2.static.storage.iamlizu.com/smmahmudulhasan-com-bd/iamlizu.jpg",
+  "links": [
+    {
+      "name": "Portfolio",
+      "url": "https://portfolio.iamlizu.com"
+    },
+    {
+      "name": "Github",
+      "url": "https://github.com/IamLizu"
+    },
+    {
+      "name": "Blog",
+      "url": "https://iamlizu.com/blog"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/iamlizuofficial/"
+    }
+  ],
+  "aboutList": [
+    "🔭 I’m currently working on Node.js (Express), React.JS.",
+    "⚡️ I’m a fast learner.",
+    "💡 I’m a team player.",
+    "🌱 BSc. in Software Engineering, from AIUB."
+  ]
 }

@@ -1,4 +1,4 @@
-name: "Deploy to GitHub Pages"
+name: "test-and-initial-gh-page"
 on:
   push:
     branches:
@@ -21,7 +21,7 @@ jobs:
         run: yarn
       - name: Running tests
         run: yarn test
-  deploy:
+  initiate-gh-pages:
     needs: test
     runs-on: ubuntu-latest
     steps:
@@ -32,7 +32,7 @@ jobs:
           node-version: "16"
       - name: Installing dependencies
         run: yarn
-      - name: Deploying to GitHub Pages
+      - name: Initiating GitHub Pages
         run: |
           git config --global user.email ${{ secrets.EMAIL }}
           git config --global user.name ${{ secrets.USERNAME }}
