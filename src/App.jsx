@@ -17,7 +17,11 @@ export default function App() {
                             </h1>
                             <p className="text-base lg:text-xl opacity-70 dark:text-slate-400">
                                 {lib.position} at{" "}
-                                <a href={lib.company_url} target="_blank">
+                                <a
+                                    href={lib.company_url}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
                                     {lib.company}
                                 </a>
                             </p>
@@ -25,36 +29,40 @@ export default function App() {
                     </div>
                 </div>
 
-                <div className="text-base lg:text-xl space-y-10 bg-gray-100 px-5 lg:px-10 py-10 m-5 rounded-lg flex flex-col justify-between">
-                    <div>
-                        {lib.aboutList.map((item, index) => (
-                            <p
-                                key={index}
-                                className="text-gray-800 opacity-95 font-sans py-1"
-                            >
-                                {item}
-                            </p>
-                        ))}
-                    </div>
-
-                    <div className="flex">
-                        {lib.links.map((link, index) => (
-                            <li key={index} className="list-none">
-                                <a
-                                    href={link.url}
-                                    className="text-indigo-600 text-base"
+                <div>
+                    <div className="text-base lg:text-xl space-y-10 bg-gray-100 px-5 lg:px-10 py-10 m-5 rounded-lg flex flex-col justify-between">
+                        <div>
+                            {lib.aboutList.map((item, index) => (
+                                <p
+                                    key={index}
+                                    className="text-gray-800 opacity-95 font-sans py-1"
                                 >
-                                    {link.name}
-                                </a>
-                                <span>
-                                    &nbsp;
-                                    {lib.links.length - 1 !== index && (
-                                        <span className="text-gray-700">/</span>
-                                    )}
-                                    &nbsp;
-                                </span>
-                            </li>
-                        ))}
+                                    {item}
+                                </p>
+                            ))}
+                        </div>
+
+                        <div className="flex">
+                            {lib.links.map((link, index) => (
+                                <li key={index} className="list-none">
+                                    <a
+                                        href={link.url}
+                                        className="text-indigo-600 text-base"
+                                    >
+                                        {link.name}
+                                    </a>
+                                    <span>
+                                        &nbsp;
+                                        {lib.links.length - 1 !== index && (
+                                            <span className="text-gray-700">
+                                                /
+                                            </span>
+                                        )}
+                                        &nbsp;
+                                    </span>
+                                </li>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
