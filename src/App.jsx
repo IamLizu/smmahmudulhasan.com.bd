@@ -16,14 +16,7 @@ export default function App() {
                                 {lib.name}
                             </h1>
                             <p className="text-base lg:text-xl opacity-70 dark:text-slate-400">
-                                {lib.position} at{" "}
-                                <a
-                                    href={lib.company_url}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    {lib.company}
-                                </a>
+                                {lib.position} {" "} {lib.company}
                             </p>
                         </div>
                     </div>

@@ -1,21 +1,29 @@
 {
     "name": "S M Mahmudul Hasan",
-    "position": "Backend Engineer",
-    "company": "ZAAG Systems Limited",
+    "position": "Member @Express.js",
+    "company": "| Node.js Backend Engineer",
     "company_url": "https://zaagsys.com",
-    "image": "https://2.static.storage.iamlizu.com/smmahmudulhasan-com-bd/pp.jpeg",
+    "image": "https://avatars.githubusercontent.com/u/26184316?v=4",
     "links": [
+        {
+            "name": "Github",
+            "url": "https://github.com/IamLizu"
+        },
         {
             "name": "LinkedIn",
             "url": "https://www.linkedin.com/in/sm-mahmudul-hasan/"
+        },        
+        {
+            "name": "Bluesky",
+            "url": "https://bsky.app/profile/iamlizu.bsky.social"
+        },
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/IamLizu"
         },
         {
             "name": "Blog",
             "url": "https://blog.smmahmudulhasan.com.bd/"
-        },
-        {
-            "name": "Github",
-            "url": "https://github.com/IamLizu"
         }
     ],
     "aboutList": [
