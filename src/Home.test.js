@@ -1,9 +1,9 @@
 import { render, screen } from "@testing-library/react";
-import App from "./App";
-import lib from "../src/lib.json";
+import Home from "./Home";
+import lib from "./lib.json";
 
 beforeEach(() => {
-    render(<App />);
+    render(<Home />);
 });
 
 test("renders person name", () => {
