@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function ProfileCard({ image, name, position, company }) {
+export default function ProfileCard({ image, name, position, company, company_url}) {
     return (
         <div className="space-y-5 flex-shrink-0 flex justify-center items-center flex-col lg:block">
             <img
@@ -14,7 +15,7 @@ export default function ProfileCard({ image, name, position, company }) {
                         {name}
                     </h1>
                     <p className="text-base lg:text-xl opacity-70 dark:text-slate-400">
-                        {position} {company}
+                        {position} @<Link to={company_url}>{company}</Link>
                     </p>
                 </div>
             </div>
