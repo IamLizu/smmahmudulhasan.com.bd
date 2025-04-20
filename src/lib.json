@@ -3,6 +3,11 @@
     "position": "Lead Software Engineer",
     "company": "Agency Handy",
     "company_url": "https://www.agencyhandy.com",
+    "community_contribution": {
+        "position": "Member",
+        "org": "Express.js",
+        "url": "https://github.com/expressjs/express"
+    },
     "image": "https://avatars.githubusercontent.com/u/26184316?v=4",
     "links": [
         {

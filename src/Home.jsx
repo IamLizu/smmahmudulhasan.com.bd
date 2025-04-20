@@ -12,6 +12,7 @@ export default function Home() {
                     position={lib.position}
                     company={lib.company}
                     company_url={lib.company_url}
+                    contribution={lib.community_contribution}
                 />
                 <div>
                     <div className="text-base lg:text-xl space-y-10 bg-gray-100 px-5 lg:px-10 py-10 m-5 rounded-lg flex flex-col justify-between">
