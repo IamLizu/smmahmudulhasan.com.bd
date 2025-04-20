@@ -5,7 +5,7 @@ export default function ProfileCard({ image, name, position, company, company_ur
     return (
         <div className="space-y-5 flex-shrink-0 flex justify-center items-center flex-col lg:block">
             <img
-                className="object-center h-36 w-36 md:h-44 md:w-44 lg:h-52 lg:w-52 rounded-full lg:rounded-md"
+                className="object-center h-36 w-36 md:h-40 md:w-40 lg:h-40 lg:w-40 rounded-full lg:rounded-md"
                 src={image}
                 alt={name}
             />
@@ -14,7 +14,7 @@ export default function ProfileCard({ image, name, position, company, company_ur
                     <h1 className="text-xl md:text-2xl lg:text-4xl dark:text-gray-100">
                         {name}
                     </h1>
-                    <p className="text-base lg:text-xl opacity-70 dark:text-slate-300">
+                    <p className="text-base lg:text-lg opacity-70 dark:text-slate-300">
                         {position} @<Link to={company_url}>{company}</Link>
                     </p>
 
